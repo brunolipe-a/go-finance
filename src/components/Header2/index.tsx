@@ -1,7 +1,11 @@
+// components/Header/index.tsx
+
+import "./styles.css";
+
 function Header() {
   return (
     <div>
-      <header>
+      <header id="header">
         <span>Go Finance</span>
         <nav>
           <a href="/">Listagem</a>
