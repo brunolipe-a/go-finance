@@ -6,7 +6,7 @@ function Header() {
   return (
     <Container>
       <header>
-        <span>Go Finance</span>
+        <span>gofinances</span>
         <nav>
           <a href="/">Listagem</a>
           <a href="/create">Cadastro</a>
