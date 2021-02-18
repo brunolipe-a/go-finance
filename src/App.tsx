@@ -1,14 +1,11 @@
-import React from "react";
-import Header from "./components/Header";
-import Header2 from "./components/Header2";
-import TransactionList from "./components/TransactionList";
+import Home from "./pages/Home";
+import GlobalStyle from "./styles/global";
 
 function App() {
   return (
     <>
-      <Header />
-      <Header2 />
-      <TransactionList />
+      <GlobalStyle />
+      <Home />
     </>
   );
 }
