@@ -21,7 +21,7 @@ function Home() {
       title: "Venda",
       type: "income",
       value: 12.12,
-      created_at: new Date(2021, 1, 2),
+      created_at: "2021-02-03T00:00:00",
     },
     {
       id: "2",
@@ -29,7 +29,7 @@ function Home() {
       title: "Lanche",
       type: "outcome",
       value: 6,
-      created_at: new Date(2021, 1, 20),
+      created_at: "2021-02-21T00:00:00",
     },
   ]);
 

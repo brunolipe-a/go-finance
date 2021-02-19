@@ -8,7 +8,7 @@ export interface Transaction {
   value: number;
   type: "income" | "outcome";
   category: { title: string };
-  created_at: Date;
+  created_at: string;
 }
 
 type TransactionListProps = {
@@ -29,19 +29,18 @@ function TransactionList({ transactions }: TransactionListProps) {
         </thead>
 
         <tbody>
-          {transactions &&
-            transactions.map((transaction) => (
-              <tr key={transaction.id}>
-                <td className="title">{transaction.title}</td>
-                <td className={transaction.type}>
-                  {formatValue(transaction.value)}
-                </td>
-                <td>{transaction.category?.title}</td>
-                <td>
-                  {new Date(transaction.created_at).toLocaleDateString("pt-br")}
-                </td>
-              </tr>
-            ))}
+          {transactions.map((transaction) => (
+            <tr key={transaction.id}>
+              <td className="title">{transaction.title}</td>
+              <td className={transaction.type}>
+                {formatValue(transaction.value)}
+              </td>
+              <td>{transaction.category?.title}</td>
+              <td>
+                {new Date(transaction.created_at).toLocaleDateString("pt-br")}
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </TableContainer>
